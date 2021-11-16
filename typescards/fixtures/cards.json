@@ -1,0 +1,54 @@
+[
+    {
+        "model": "typescards.category",
+        "pk": 1,
+        "fields": {
+            "name": "Caras"
+        }
+    },
+    {
+        "model": "typescards.category",
+        "pk": 2,
+        "fields": {
+            "name": "Coste medio"
+        }
+    },
+    {
+        "model": "typescards.category",
+        "pk": 3,
+        "fields": {
+            "name": "Baratas"
+        }
+    },
+    {
+        "model": "typescards.types",
+        "pk": 1,
+        "fields": {
+            "name": "Charizard",
+            "description": "Carta muy cara",
+            "year":"1995",
+            "category": 1
+        }
+    },
+    {
+        "model": "typescards.types",
+        "pk": 2,
+        "fields": {
+            "name": "Pikachu",
+            "description": "Carta accesible",
+            "year":"1995",
+            "category": 2
+        }
+    },
+    {
+        "model": "typescards.types",
+        "pk": 3,
+        "fields": {
+            "name": "Digglet",
+            "description": "Carta muy economica",
+            "year":"1995",
+            "category": 3
+            
+        }
+    }
+]
