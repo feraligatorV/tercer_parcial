@@ -1,9 +1,10 @@
 import graphene
 from graphene import relay, ObjectType
+from graphene import types
 from graphene_django import DjangoObjectType
 from graphene_django.filter import DjangoFilterConnectionField
 
-from typescards.models import Category, Ingredient
+from typescards.models import Category, Types
 from typescards.models import Types
 
 
@@ -34,5 +35,5 @@ class Query(graphene.ObjectType):
     category = relay.Node.Field(CategoryNode)
     all_categories = DjangoFilterConnectionField(CategoryNode)
 
-    ingredient = relay.Node.Field(CardsNode)
-    all_ingredients = DjangoFilterConnectionField(CardsNode)
+    types = relay.Node.Field(CardsNode)
+    all_types = DjangoFilterConnectionField(CardsNode)
